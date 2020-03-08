@@ -1,9 +1,28 @@
 
-header{
+header.usa-header{
   @include u-padding-bottom(3);
-  @include u-bg('white');
+  @include u-bg('orange-warm-30v');
   .usa-logo{
     @include u-font('sans', 'lg');
     @include u-text('bold');
+  }
+  .usa-nav{
+    li{
+      .usa-nav__link{
+        @include u-text('black');
+        @include u-text('normal');
+        @include u-font('sans', 'md');
+        &:after{
+          @include u-height(0);
+        }
+        &:hover{
+          @include u-text('black');
+          span{
+            @include u-padding-bottom('05');
+            @include u-border-bottom('2px','solid','black');
+          }
+        }
+      }
+    }
   }
 }

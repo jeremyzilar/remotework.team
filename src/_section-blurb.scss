@@ -5,4 +5,19 @@
     @include u-font('sans', 'xl');
     @include u-line-height('sans', 2);
   }
+  .usa-prose{
+    @include u-font('sans', 'lg');
+  }
+}
+
+.blurb-what-we-do{
+  .usa-prose{
+    span{
+      @include u-bg('gold-10v');
+    }
+  }
+}
+
+.blurb-remote-first{
+  @include u-bg('indigo-warm-10');
 }

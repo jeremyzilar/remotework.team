@@ -1,13 +1,21 @@
-<section class="blurb grid-container usa-section">
-  <div class="grid-row grid-gap">
-    <div class="tablet:grid-col-4">
-      <h2>What we do?</h2>
-    </div>
-    <div class="tablet:grid-col-8">
-      <div class="usa-prose">
-        <p>Strategic business consulting to help organizations transition to a remote-first work culture and empower teams to have greater productivity and independence.</p>
-        <p>I help teams to improve the way they work by creating and implementing new physical and digital workflows, rhythms, and communication that better serves the vision of the organization and improve the quality and efficiency of products and services, experiences.</p>
+<!-- include.data -->
+{% for item in site.data.[include.data].blurb %}
+  <section class="blurb blurb-{{ include.data }} usa-section">
+    <div class="grid-container grid-container-desktop-lg">
+      <div class="grid-row grid-gap">
+        {% if item.heading %}
+        <div class="grid-col-12 tablet:grid-col-4">
+          <h2>{{ item.heading }}</h2>
+        </div>
+        {% endif %}
+        <div class="grid-col-12 tablet:grid-col-8">
+          <div class="usa-prose">
+            {% if item.text %}
+            {{ item.text | markdownify }}
+            {% endif %}
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+{% endfor %}
