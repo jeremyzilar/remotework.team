@@ -1,0 +1,8 @@
+
+.blurb{
+  h2{
+    @include u-margin-top(0);
+    @include u-font('sans', 'xl');
+    @include u-line-height('sans', 2);
+  }
+}

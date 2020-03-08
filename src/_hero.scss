@@ -1,0 +1,10 @@
+
+.usa-hero{
+  // background-image: none;
+  @include u-border-top(0, !important);
+  @include u-bg('white');
+
+  .usa-hero__callout{
+    @include u-maxw('mobile');
+  }
+}

@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Remote Work Consulting
+title: Remote Working for Teams
 email: jeremyzilar@gmail.com
 description: TKTK
 baseurl: "/" # the subpath of your site, e.g. /blog
@@ -49,6 +49,8 @@ github:
   repository: remotework.team
   default_branch: master
 
+hero__heading: "Help transition your team to working remotely"
+hero__callout: "Strategic business consulting to help organizations transition to a remote-first work culture and empower teams to have greater productivity and independence."
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

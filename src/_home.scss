@@ -13,23 +13,3 @@
     }
   }
 }
-
-#elsewhere{
-  @include u-padding-y(10);
-  .content{
-    ul{
-      @include add-list-reset;
-      @include u-margin-y(3);
-      @include u-font('sans', 'md');
-      a{
-        @include u-text('no-underline');
-        @include u-text('black');
-        &:hover{
-          span{
-            @include u-border-bottom('1px', 'solid', 'black');
-          }
-        }
-      }
-    }
-  }
-}

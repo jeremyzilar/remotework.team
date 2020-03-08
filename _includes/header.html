@@ -1,13 +1,30 @@
-<header>
-  <div class="grid-container grid-container-desktop-lg">
-    <div class="grid-row">
-      <div class="grid-col-7">
-        {% if page.layout == 'home' %}
-          <h1><a href="{{ site.baseurl }}" title="{{ site.title }}">{{ site.title }}</a></h1>
-        {% else %}
-          <h2><a href="{{ site.baseurl }}" title="{{ site.title }}">{{ site.title }}</a></h2>
-        {% endif %}
+<div class="usa-overlay"></div>
+<header class="usa-header usa-header--basic">
+  <div class="usa-nav-container">
+    <div class="usa-navbar">
+      <div class="usa-logo" id="basic-logo">
+        <em class="usa-logo__text">
+          <a href="{{ site.baseurl }}" title="Home" aria-label="Home">{{ site.title }}</a>
+        </em>
       </div>
+      <button class="usa-menu-btn">Menu</button>
     </div>
+
+    <nav aria-label="Primary navigation" class="usa-nav">
+      <button class="usa-nav__close">
+        <img src="/assets/img/close.svg" alt="close">
+      </button>
+      <ul class="usa-nav__primary usa-accordion">
+        <li class="usa-nav__primary-item">
+          <a class="usa-nav__link" href="javascript:void(0)"><span>Simple link</span></a>
+        </li>
+        <li class="usa-nav__primary-item">
+          <a class="usa-nav__link" href="javascript:void(0)"><span>Simple link</span></a>
+        </li>
+        <li class="usa-nav__primary-item">
+          <a class="usa-nav__link" href="javascript:void(0)"><span>Simple link</span></a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </header>

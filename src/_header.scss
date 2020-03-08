@@ -1,17 +1,9 @@
 
 header{
-  @include u-padding-y(9);
-  h1,
-  h2{
+  @include u-padding-bottom(3);
+  @include u-bg('white');
+  .usa-logo{
     @include u-font('sans', 'lg');
-    @include u-text('normal');
-    a{
-      @include u-padding-y('05');
-      @include u-text('no-underline');
-      @include u-text('black');
-      &:hover{
-        @include u-border-bottom('2px', 'solid', 'primary-vivid');
-      }
-    }
+    @include u-text('bold');
   }
 }
