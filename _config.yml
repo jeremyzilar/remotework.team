@@ -17,7 +17,7 @@ title: Remote Friendly
 email: jeremyzilar@gmail.com
 description: "We help small teams transition to a remote-first work culture."
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://remote-team.work/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jeremyzilar
 github_username:  jeremyzilar
 
@@ -27,6 +27,7 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jemoji
 
 include: ["_pages"]
 permalink: /:title/
