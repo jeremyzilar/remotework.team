@@ -1,7 +1,7 @@
 
 header.usa-header{
   @include u-padding-bottom(3);
-  @include u-bg('orange-warm-30v');
+  @include u-bg('base-lightest');
   .usa-logo{
     @include u-font('sans', 'lg');
     @include u-text('bold');
