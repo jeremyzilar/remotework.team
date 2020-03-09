@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Remote Friendly
 email: jeremyzilar@gmail.com
-description: TKTK
+description: "We help small teams transition to a remote-first work culture."
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jeremyzilar
@@ -51,6 +51,15 @@ github:
 
 hero__heading: "We help small teams transition to a remote-first work culture."
 hero__callout: "Strategic business consulting to help organizations transition to a remote-first work culture and empower teams to have greater productivity and independence."
+
+# Verify ownership in Google webmaster tools
+webmaster_verifications:
+  google: HIgE8U5i5ucDEtKdW4BBv_l5382H3BMZWgv5wRgZnFc
+  # bing: 1234
+  # alexa: 1234
+  # yandex: 1234
+  # baidu: 1234
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
