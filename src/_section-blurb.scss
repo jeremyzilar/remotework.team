@@ -22,6 +22,9 @@
     span{
       @include u-bg('gold-5v');
     }
+    a{
+      @include u-text('black');
+    }
   }
 
 }
