@@ -17,11 +17,14 @@ header.usa-header{
   .usa-logo{
     @include u-font('sans', 'lg');
     @include u-text('bold');
+    a{
+      @include u-text('blue-warm-80v');
+    }
   }
   .usa-nav{
     li{
       .usa-nav__link{
-        @include u-text('black');
+        @include u-text('blue-warm-80v');
         @include u-text('normal');
         @include u-font('sans', 'md');
         &:after{
