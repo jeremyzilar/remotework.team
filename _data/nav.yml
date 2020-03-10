@@ -1,5 +1,5 @@
 list:
   - text: "What we offer"
-    href: we-offer
+    href: "#we-offer"
   - text: "Let’s talk"
     href: https://calendly.com/jeremyzilar/online

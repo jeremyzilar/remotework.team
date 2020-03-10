@@ -1,6 +1,6 @@
 <!-- include.data -->
 {% for item in site.data.[include.data].blurb %}
-  <section class="blurb blurb-{{ include.data }} usa-section">
+  <section id="{{ include.data }}" class="blurb blurb-{{ include.data }} usa-section">
     <div class="grid-container grid-container-desktop-lg">
       <div class="grid-row grid-gap">
         {% if item.heading %}
@@ -23,6 +23,9 @@
             {{ item.text | markdownify }}
             {% endif %}
           </div>
+          {% if item.button_text %}
+          <a class="usa-button" href="{{ item.button_href }}"><span>{{ item.button_text }}</span> <i class="fas fa-arrow-right"></i></a>
+          {% endif %}
         </div>
       </div>
     </div>

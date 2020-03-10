@@ -14,9 +14,9 @@
     @include u-font('sans', 'xl');
     @include u-line-height('sans', 5);
     @include u-text('normal');
-    @include u-position('relative');
-    @include u-left('neg-1');
     @include at-media('tablet') {
+      @include u-position('relative');
+      @include u-left('neg-1');
       @include u-font('sans', '3xl');
       @include u-line-height('sans', 4);
       @include u-left('neg-105');
@@ -38,29 +38,14 @@
       }
     }
   }
-
   .usa-button{
-    @include u-margin-y(4);
-    @include u-padding-y(1);
-    @include u-padding-x('05');
-    @include u-bg('orange-warm-40v');
-    @include u-font('sans', 'md');
-    @include u-text('medium');
-    @include u-text('white');
-    @include u-left('neg-1');
-    @include u-position('relative');
-    @include u-radius('md');
     @include at-media('tablet'){
+      @include u-left('neg-105');
+      @include u-position('relative');
       @include u-margin-y(4);
       @include u-padding-y('205');
       @include u-padding-x('205');
       @include u-font('sans', 'lg');
-      @include u-left('neg-105');
-    }
-    &:hover{
-      span{
-        @include u-border-bottom('2px','solid','white');
-      }
     }
   }
 }
