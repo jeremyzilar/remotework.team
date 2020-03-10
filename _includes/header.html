@@ -17,7 +17,7 @@
       <ul class="usa-nav__primary usa-accordion">
         {% for item in site.data.nav.list %}
         <li class="usa-nav__primary-item">
-          <a class="usa-nav__link" href="javascript:void(0)"><span>{{ item.text }}</span></a>
+          <a class="usa-nav__link" href="{{ item.href }}"><span>{{ item.text }}</span></a>
         </li>
         {% endfor %}
       </ul>

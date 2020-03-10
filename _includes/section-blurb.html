@@ -5,7 +5,16 @@
       <div class="grid-row grid-gap">
         {% if item.heading %}
         <div class="grid-col-12 tablet:grid-col-4">
-          <h2>{{ item.heading }}</h2>
+          <div class="blurb-heading">
+            <h2>{{ item.heading }}</h2>
+          </div>
+        </div>
+        {% endif %}
+        {% if item.img %}
+        <div class="grid-col-12 tablet:grid-col-2">
+          <div class="blurb-heading">
+            <img src="{{ item.img }}" alt="{{ item.img_alt }}">
+          </div>
         </div>
         {% endif %}
         <div class="grid-col-12 tablet:grid-col-8">

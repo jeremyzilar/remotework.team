@@ -1,15 +1,17 @@
 
 
 .hero{
-  @include u-padding-y(5);
+  @include u-padding-y(2);
   @include u-bg('orange-warm-20v');
   @include u-bg('white');
   @include u-bg('base-lightest');
-  // @include u-bg('indigo-warm-90');
+  @include at-media('tablet'){
+    @include u-padding-y(5);
+  }
 
   h1{
     @include u-margin-y(0);
-    @include u-font('sans', 'lg');
+    @include u-font('sans', 'xl');
     @include u-line-height('sans', 5);
     @include u-text('normal');
     @include u-position('relative');
@@ -38,23 +40,26 @@
   }
 
   .usa-button{
-    @include u-margin-top(4);
-    @include u-bg('base-lightest');
-    @include u-font('sans', 'lg');
+    @include u-margin-y(4);
+    @include u-padding-y(1);
+    @include u-padding-x('05');
+    @include u-bg('orange-warm-40v');
+    @include u-font('sans', 'md');
     @include u-text('medium');
-    @include u-text('black');
+    @include u-text('white');
     @include u-left('neg-1');
     @include u-position('relative');
     @include u-radius('md');
-    @include u-border('05','solid','black');
     @include at-media('tablet'){
+      @include u-margin-y(4);
+      @include u-padding-y('205');
+      @include u-padding-x('205');
+      @include u-font('sans', 'lg');
       @include u-left('neg-105');
     }
     &:hover{
-      @include u-bg('primary-lighter');
-      @include u-bg('white');
       span{
-        @include u-border-bottom('2px','solid','black');
+        @include u-border-bottom('2px','solid','white');
       }
     }
   }

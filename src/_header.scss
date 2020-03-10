@@ -1,7 +1,19 @@
 
 header.usa-header{
-  @include u-padding-bottom(3);
-  @include u-bg('base-lightest');
+  @include u-padding-bottom(0);
+  @include at-media('tablet'){
+    @include u-padding-bottom(3);
+  }
+  @include u-bg('gray-warm-10');
+  .usa-navbar{
+    @include u-border-bottom(0);
+    .usa-menu-btn{
+      @include u-border-left('1px','solid','base-light');
+      @include u-bg('gray-warm-10');
+      @include u-text('black');
+      @include u-display('none');
+    }
+  }
   .usa-logo{
     @include u-font('sans', 'lg');
     @include u-text('bold');
@@ -19,7 +31,7 @@ header.usa-header{
           @include u-text('black');
           span{
             @include u-padding-bottom('05');
-            @include u-border-bottom('2px','solid','black');
+            @include u-border-bottom('05','solid','primary-vivid');
           }
         }
       }
