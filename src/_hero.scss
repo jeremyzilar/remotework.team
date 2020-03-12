@@ -15,6 +15,9 @@
     @include u-line-height('sans', 5);
     @include u-text('normal');
     @include at-media('tablet') {
+      @include u-font('sans', '2xl');
+    }
+    @include at-media('desktop') {
       @include u-position('relative');
       @include u-left('neg-1');
       @include u-font('sans', '3xl');

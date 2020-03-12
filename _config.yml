@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Remote Friendly
 email: jeremyzilar@gmail.com
-description: "We help small to medium-size organizations transition to remote working."
+description: "We help small and medium-sized organizations transition to remote working."
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://remote-team.work/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jeremyzilar
@@ -50,7 +50,7 @@ github:
   repository: remotework.team
   default_branch: master
 
-hero__heading: "We help small to medium size organizations transition to remote working."
+hero__heading: "We help small and medium-sized organizations transition to remote working."
 hero__callout: "Strategic business consulting to help organizations transition to a remote-first work culture and empower teams to have greater productivity and independence."
 
 # Verify ownership in Google webmaster tools
