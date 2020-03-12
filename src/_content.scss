@@ -41,17 +41,6 @@
     @include u-top('2px');
   }
 
-  .btn{
-    @include u-padding-y('2px');
-    @include u-padding-x('105');
-    @include u-display('inline-block');
-    @include u-radius('sm');
-    @include u-text('no-underline');
-    @include u-text('normal');
-    @include u-text('primary-vivid');
-    @include u-border('2px', 'solid', 'primary-vivid');
-    @include u-font('sans', 'md');
-  }
 
   hr{
     @include u-margin-y(6);
@@ -113,6 +102,30 @@
     @include u-bg('orange-warm-40v');
     span{
       @include u-border-bottom('2px','solid','white');
+    }
+  }
+}
+
+.usa-button-sm{
+  @include u-margin-top('205');
+  @include u-padding-y(1);
+  @include u-padding-x('05');
+  @include u-font('sans', 'sm');
+  @include u-display('inline-block');
+}
+
+.usa-button-light{
+  @include u-text('orange-warm-40v');
+  @include u-bg('white');
+  @include u-border('2px','solid','orange-warm-40v');
+  span, i{
+    @include u-text('orange-warm-40v');
+  }
+  &:hover{
+    @include u-bg('white');
+    @include u-border-bottom('2px','solid','orange-warm-40v');
+    span{
+      @include u-border-bottom('2px','solid','orange-warm-40v');
     }
   }
 }

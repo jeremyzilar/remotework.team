@@ -15,7 +15,10 @@ header.usa-header{
     }
   }
   .usa-logo{
-    @include u-font('sans', 'lg');
+    @include u-font('sans', 'md');
+    @include at-media('tablet') {
+      @include u-font('sans', 'lg');
+    }
     @include u-text('bold');
     a{
       @include u-text('blue-warm-80v');

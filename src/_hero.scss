@@ -39,6 +39,8 @@
     }
   }
   .usa-button{
+    @include u-padding-y(2);
+    @include u-padding-x(2);
     @include at-media('tablet'){
       @include u-left('neg-105');
       @include u-position('relative');
@@ -48,4 +50,5 @@
       @include u-font('sans', 'lg');
     }
   }
+
 }

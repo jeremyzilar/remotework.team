@@ -2,30 +2,32 @@
 {% for item in site.data.[include.data].blurb %}
   <section id="{{ include.data }}" class="blurb blurb-{{ include.data }} usa-section">
     <div class="grid-container grid-container-desktop-lg">
-      <div class="grid-row grid-gap">
-        {% if item.heading %}
-        <div class="grid-col-12 tablet:grid-col-4">
+      <div class="grid-row grid-gap-4">
+        <div class="grid-col-12 tablet:grid-col-7">
+          {% if item.heading %}
           <div class="blurb-heading">
             <h2>{{ item.heading }}</h2>
           </div>
-        </div>
-        {% endif %}
-        {% if item.img %}
-        <div class="grid-col-12 tablet:grid-col-2">
-          <div class="blurb-heading">
-            <img src="{{ item.img }}" alt="{{ item.img_alt }}">
-          </div>
-        </div>
-        {% endif %}
-        <div class="grid-col-12 tablet:grid-col-8">
+          {% endif %}
+          {% if item.lead %}
+            <div class="deck usa-intro">{{ item.lead | markdownify }}</div>
+          {% endif %}
           <div class="usa-prose">
-            {% if item.text %}
-            {{ item.text | markdownify }}
+            {% if item.col1 %}
+            {{ item.col1 | markdownify }}
             {% endif %}
           </div>
           {% if item.button_text %}
           <a class="usa-button" href="{{ item.button_href }}"><span>{{ item.button_text }}</span> <i class="fas fa-arrow-right"></i></a>
           {% endif %}
+        </div>
+        <div class="grid-col-12 tablet:grid-col-5">
+          <div class="usa-prose">
+            {% if item.col2 %}
+            {{ item.col2 | markdownify }}
+            {% endif %}
+          </div>
+          <a class="usa-button usa-button-sm usa-button-light" href="https://calendly.com/jeremyzilar/online"><span>Book a free 15min intro</span> <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </div>

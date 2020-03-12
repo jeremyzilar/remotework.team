@@ -1,17 +1,25 @@
 
 .blurb{
-  .blurb-heading{
-    h2{
-      // @include u-text('light');
+  h2{
+    @include u-margin-top(0);
+    @include u-font('sans', 'lg');
+    @include u-text('medium');
+    @include u-line-height('sans', 3);
+    @include at-media('tablet'){
+      @include u-margin-bottom(1);
+      @include u-text('light');
+      @include u-margin-bottom(3);
+      @include u-font('sans', 'xl');
+    }
+  }
+  h3{
+    @include u-margin-top(4);
+    @include u-font('sans', 'md');
+    @include u-text('medium');
+    @include at-media('tablet'){
       @include u-margin-top(0);
       @include u-font('sans', 'lg');
-      @include u-text('medium');
-      @include u-line-height('sans', 2);
-      @include at-media('tablet'){
-        @include u-text('light');
-        @include u-margin-bottom(2);
-        @include u-font('sans', '2xl');
-      }
+      @include u-margin-bottom(3);
     }
   }
   img{
@@ -29,6 +37,30 @@
       // @include u-float('left');
     }
   }
+
+  ul{
+    @include u-padding-left(3);
+  }
+
+  // lead text
+  .usa-intro{
+    @include u-font('sans', 'lg');
+    @include u-line-height('sans', 2);
+    @include u-text('light');
+    @include at-media('tablet'){
+      @include u-font('sans', 'lg');
+    }
+    p{
+      @include u-margin-y(2);
+      @include u-line-height('sans', 3);
+      @include at-media('tablet'){
+        @include u-margin-top(0);
+        @include u-margin-bottom(4);
+      }
+    }
+  }
+
+  // Content
   .usa-prose{
     @include u-font('sans', 'sm');
     @include at-media('tablet'){
@@ -41,11 +73,17 @@
       @include u-text('black');
     }
   }
+  .usa-button-sm{
+    @include u-display('inline-block');
+    @include at-media('tablet'){
+      @include u-display('none');
+    }
+  }
 
 }
 
 
-.blurb-who-we-are{
+.blurb-about{
   @include u-bg('indigo-warm-10');
   @include u-border-top('05','solid','blue-warm-50');
 }
