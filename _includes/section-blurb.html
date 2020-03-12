@@ -17,9 +17,6 @@
             {{ item.col1 | markdownify }}
             {% endif %}
           </div>
-          {% if item.button_text %}
-          <a class="usa-button" href="{{ item.button_href }}"><span>{{ item.button_text }}</span> <i class="fas fa-arrow-right"></i></a>
-          {% endif %}
         </div>
         <div class="grid-col-12 tablet:grid-col-5">
           <div class="usa-prose">
@@ -27,7 +24,9 @@
             {{ item.col2 | markdownify }}
             {% endif %}
           </div>
-          <a class="usa-button usa-button-sm usa-button-light" href="https://calendly.com/jeremyzilar/online"><span>Book a free 15min intro</span> <i class="fas fa-arrow-right"></i></a>
+          {% if item.button_text %}
+          <a class="usa-button usa-button-sm usa-button-light" href="{{ item.button_href }}"><span>{{ item.button_text }}</span> <i class="fas fa-arrow-right"></i></a>
+          {% endif %}
         </div>
       </div>
     </div>
