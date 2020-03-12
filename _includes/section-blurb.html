@@ -3,7 +3,7 @@
   <section id="{{ include.data }}" class="blurb blurb-{{ include.data }} usa-section">
     <div class="grid-container grid-container-desktop-lg">
       <div class="grid-row grid-gap-4">
-        <div class="grid-col-12 tablet:grid-col-7">
+        <div class="grid-col-12 tablet-lg:grid-col-7">
           {% if item.heading %}
           <div class="blurb-heading">
             <h2>{{ item.heading }}</h2>
@@ -18,7 +18,7 @@
             {% endif %}
           </div>
         </div>
-        <div class="grid-col-12 tablet:grid-col-5">
+        <div class="grid-col-12 tablet-lg:grid-col-5">
           <div class="usa-prose">
             {% if item.col2 %}
             {{ item.col2 | markdownify }}

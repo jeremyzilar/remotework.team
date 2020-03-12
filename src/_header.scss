@@ -1,7 +1,7 @@
 
 header.usa-header{
   @include u-padding-bottom(0);
-  @include at-media('tablet'){
+  @include at-media('tablet-lg'){
     @include u-padding-bottom(3);
   }
   @include u-bg('gray-warm-10');
@@ -16,7 +16,7 @@ header.usa-header{
   }
   .usa-logo{
     @include u-font('sans', 'md');
-    @include at-media('tablet') {
+    @include at-media('tablet-lg') {
       @include u-font('sans', 'lg');
     }
     @include u-text('bold');

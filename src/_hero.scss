@@ -5,7 +5,7 @@
   @include u-bg('orange-warm-20v');
   @include u-bg('white');
   @include u-bg('base-lightest');
-  @include at-media('tablet'){
+  @include at-media('tablet-lg'){
     @include u-padding-y(5);
   }
 
@@ -14,15 +14,14 @@
     @include u-font('sans', 'xl');
     @include u-line-height('sans', 5);
     @include u-text('normal');
-    @include at-media('tablet') {
+    @include at-media('tablet-lg') {
       @include u-font('sans', '2xl');
+      @include u-position('relative');
+      @include u-left('neg-105');
     }
     @include at-media('desktop') {
-      @include u-position('relative');
-      @include u-left('neg-1');
       @include u-font('sans', '3xl');
       @include u-line-height('sans', 4);
-      @include u-left('neg-105');
     }
     span{
       @include u-padding-top('2px');
@@ -33,7 +32,7 @@
       @include u-text('black');
       box-decoration-break: clone;
       -webkit-box-decoration-break: clone;
-      @include at-media('tablet') {
+      @include at-media('tablet-lg') {
         @include u-padding-top(0);
         @include u-padding-bottom('05');
         @include u-padding-x('105');
@@ -44,7 +43,7 @@
   .usa-button{
     @include u-padding-y(2);
     @include u-padding-x(0);
-    @include at-media('tablet'){
+    @include at-media('tablet-lg'){
       @include u-left('neg-105');
       @include u-position('relative');
       @include u-margin-y(4);

@@ -91,7 +91,7 @@
   @include u-text('medium');
   @include u-text('white');
   @include u-radius('md');
-  @include at-media('tablet'){
+  @include at-media('tablet-lg'){
     @include u-display('inline-block');
     @include u-margin-top(3);
     @include u-padding-y(2);
