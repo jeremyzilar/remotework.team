@@ -23,6 +23,7 @@
     }
   }
   img{
+    @include u-float('right');
     @include u-circle('10');
     @include u-width('10');
     @include u-border('2px','solid','blue-warm-30');
@@ -45,19 +46,28 @@
   // lead text
   .usa-intro{
     @include u-font('sans', 'lg');
-    @include u-line-height('sans', 2);
     @include u-text('light');
     @include at-media('tablet'){
       @include u-font('sans', 'lg');
     }
     p{
       @include u-margin-y(2);
-      @include u-line-height('sans', 3);
+      @include u-line-height('sans', 4);
       @include at-media('tablet'){
         @include u-margin-top(0);
         @include u-margin-bottom(4);
       }
+      strong{
+        @include u-text('medium');
+      }
+      a{
+        @include u-text('black');
+        &:visited{
+          @include u-text('black');
+        }
+      }
     }
+
   }
 
   // Content
@@ -69,9 +79,16 @@
     span{
       @include u-bg('gold-5v');
     }
+    strong{
+      @include u-text('medium');
+    }
     a{
       @include u-text('black');
+      &:visited{
+        @include u-text('black');
+      }
     }
+
   }
   .usa-button-sm{
     @include u-display('inline-block');
