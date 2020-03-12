@@ -2,18 +2,35 @@
 layout: default
 ---
 
-<main id="main" class="page">
+<main id="main-content" class="usa-layout-docs usa-section">
   <div class="grid-container grid-container-desktop-lg">
-    <div class="grid-row">
-      <div class="grid-col-12 tablet:grid-col-8">
-        <article>
-          <div class="head">
-            <h1>{{ page.title | escape }}</h1>
-          </div>
-          <div class="content usa-prose">
-            {{ content }}
-          </div>
-        </article>
+    <div class="grid-row tablet:grid-gap-6">
+      <div class="grid-col-12 tablet:grid-col-3">
+
+        <aside class="usa-layout-docs__sidenav">
+          <nav aria-label="Secondary navigation">
+            {% include nav.html nav=site.data.nav.nav %}
+          </nav>
+        </aside>
+
+      </div>
+      <div class="grid-col-12 tablet:grid-col-7">
+
+        <div class="usa-layout-docs__main usa-prose page-head">
+          <h1>{{ page.title | escape }}</h1>
+
+          {% if page.deck %}
+          <div class="deck usa-intro">{{ page.deck | escape }}</div>
+          {% endif %}
+        </div>
+
+        <div class="usa-layout-docs__main usa-prose">
+          {% include toc.html html=content h_max=2 %}
+          {% include anchor_headings.html html=content beforeHeading=true %}
+        </div>
+
+        <p class="edit"><a target="new" title="edit this page" href="{{site.github.repository_url}}/edit/master/{{page.path}}">Edit</a></p>
+
       </div>
     </div>
   </div>

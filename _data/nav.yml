@@ -1,5 +1,17 @@
-list:
+main:
   - text: "What we offer"
     href: "#we-offer"
   - text: "Let’s talk"
     href: https://calendly.com/jeremyzilar/online
+
+nav:
+  - text: Home
+    slug: "/"
+  - text: Resources
+    slug: resources
+  - text: Schedule a time
+    slug: https://calendly.com/jeremyzilar/online
+
+packages:
+  - text: 60min
+    slug: 60min

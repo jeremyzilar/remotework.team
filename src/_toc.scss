@@ -1,0 +1,11 @@
+.toc{
+  h2{
+    @include u-font('sans', 'lg');
+  }
+  ul{
+    @include u-font('sans', 'md');
+    li{
+      @include u-margin-y('05');
+    }
+  }
+}

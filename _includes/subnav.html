@@ -1,0 +1,8 @@
+<ul class="usa-sidenav__sublist">
+  {% for item in site.data.nav.[include.group] %}
+    <li class="usa-sidenav__item">
+      {% assign path = include.group | append: '/' | append: item.slug %}
+      <a class="{% if item.slug == page.url %}usa-current{% endif %}" href="{{ path | absolute_url }}" title="{{ item.text }}">{{ item.text }}</a>
+    </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,15 @@
+<ul class="usa-sidenav">
+{% for item in include.nav %}
+  <li class="usa-sidenav__item">
+    {% assign id = item.slug | replace:'/','' %}
+    {% assign url = page.url | replace:'/','' %}
+    <a class="{% if id == url %}usa-current{% endif %}" href="{{ item.slug | absolute_url }}" title="{{ item.text }}">{{ item.text }}</a>
+    {% if id == page.nav %}
+      {% if site.data.nav.[page.nav] %}
+        {% include subnav.html group=page.nav %}
+      {% endif %}
+    {% endif %}
+
+  </li>
+{% endfor %}
+</ul>
