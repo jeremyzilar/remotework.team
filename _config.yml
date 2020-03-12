@@ -38,7 +38,7 @@ defaults:
       type: "pages"
     values:
       layout: "page"
-      image: /assets/img/card-remote-team-work-1.png
+      image: /assets/img/card-remote-team-work-2.png
 
 collections:
   pages:
