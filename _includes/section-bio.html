@@ -3,7 +3,7 @@
   <section id="{{ include.data }}" class="blurb blurb-{{ include.data }} usa-section">
     <div class="grid-container grid-container-desktop-lg">
       <div class="grid-row">
-        <div class="grid-col-12 tablet-lg:grid-col-9">
+        <div class="grid-col-12 tablet-lg:grid-col-8">
           {% if item.heading %}
           <div class="blurb-heading">
             <h2>{{ item.heading }}</h2>
@@ -12,25 +12,12 @@
           {% if item.lead %}
             <div class="deck usa-intro">{{ item.lead | markdownify }}</div>
           {% endif %}
-        </div>
-      </div>
-      <div class="grid-row grid-gap-4">
-
-        <div class="grid-col-12 tablet-lg:grid-col-8">
-          <div class="usa-prose">
-            {% if item.img %}
-            <img src="{{ item.img }}" alt="{{ item.img_alt }}">
-            {% endif %}
-            {% if item.text %}
-            {{ item.text | markdownify }}
-            {% endif %}
-          </div>
           {% if item.button_text %}
           <a class="usa-button" href="{{ item.button_href }}"><span>{{ item.button_text }}</span> <i class="fas fa-arrow-right"></i></a>
           {% endif %}
         </div>
-
       </div>
+
     </div>
   </section>
 {% endfor %}
