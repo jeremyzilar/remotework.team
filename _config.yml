@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Remote Work Coaching for Teams — Remote Friendly
+title: Remote Friendly
 email: jeremyzilar@gmail.com
 description: "We help small and medium-sized organizations transition to remote working."
 baseurl: "/" # the subpath of your site, e.g. /blog
