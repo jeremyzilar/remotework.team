@@ -50,7 +50,7 @@
       @include u-line-height('sans', 4);
       @include at-media('tablet-lg'){
         @include u-margin-top(0);
-        @include u-margin-bottom('105');
+        @include u-margin-bottom('205');
       }
       strong{
         @include u-text('medium');
