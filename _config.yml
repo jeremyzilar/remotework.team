@@ -16,7 +16,7 @@
 title: Remote Friendly
 email: jeremyzilar@gmail.com
 description: "We help small and medium-sized organizations transition to remote working."
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://remote-team.work/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jeremyzilar
 github_username:  jeremyzilar
@@ -38,7 +38,7 @@ defaults:
       type: "pages"
     values:
       layout: "page"
-      image: /assets/img/card-remote-team-work-2.png
+      image: assets/img/card-remote-team-work-2.png
 
 collections:
   pages:
