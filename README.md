@@ -2,6 +2,7 @@
 ### We help small and medium-sized organizations transition to remote working.
 https://remote-team.work/
 
+We’ll work with you to improve how your distributed team collaborates by creating and implementing new physical and digital workflows, rhythms, and communication that better serves your team and organization.
 
 **Book a free 15min session** — https://calendly.com/jeremyzilar/online
 
