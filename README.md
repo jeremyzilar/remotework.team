@@ -1,9 +1,9 @@
 # Remote Friendly
-We help small and medium-sized organizations transition to remote working.
+### We help small and medium-sized organizations transition to remote working.
+https://remote-team.work/
 
-To learn more, visit https://remote-team.work/
-Book a free 15min session https://calendly.com/jeremyzilar/online?month=2020-03
 
+**Book a free 15min session** — https://calendly.com/jeremyzilar/online
 
 ---
 
