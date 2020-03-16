@@ -2,16 +2,26 @@
 {% for item in site.data.[include.data].blurb %}
   <section id="{{ include.data }}" class="blurb blurb-{{ include.data }} usa-section">
     <div class="grid-container grid-container-desktop-lg">
-      <div class="grid-row">
+      <div class="grid-row grid-gap-4">
         <div class="grid-col-12 tablet-lg:grid-col-8">
           {% if item.heading %}
           <div class="blurb-heading">
             <h2>{{ item.heading }}</h2>
           </div>
           {% endif %}
+
           {% if item.lead %}
             <div class="deck usa-intro">{{ item.lead | markdownify }}</div>
           {% endif %}
+
+          {% if item.text %}
+            <div class="usa-prose">
+            {{ item.text | markdownify }}
+            </div>
+          {% endif %}
+
+        </div>
+        <div class="grid-col-12 tablet-lg:grid-col-4">
           {% if item.button_text %}
           <a class="usa-button" href="{{ item.button_href }}"><span>{{ item.button_text }}</span> <i class="fas fa-arrow-right"></i></a>
           {% endif %}

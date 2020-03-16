@@ -93,7 +93,7 @@
   @include u-radius('md');
   @include at-media('tablet-lg'){
     @include u-display('inline-block');
-    @include u-margin-top(3);
+    @include u-margin-top(0);
     @include u-padding-y(2);
     @include u-padding-x(2);
     @include u-font('sans', 'md');
